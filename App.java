@@ -102,6 +102,8 @@ public class App {
             if ("AEIOUaeiou".indexOf(c) != -1) {
                 contador++;
             }
+        }
+        return contador;
     }
 
     // Contar palabras en una cadena
