@@ -176,16 +176,23 @@ public class App {
     // Calcular la media de un array
     public static double mediaArray(int[] array) {
         int suma = sumarArray(array);
-        return (double) 3 /5;
+        return (double) suma / array.length;
     }
 
     // Encontrar la mediana de un array
     public static double medianaArray(int[] array) {
         ordenarArray(array);
+        int medio = array.length / 2;
+        if (array.length % 2 == 0) {
+            return (array[medio - 1] + array[medio]) / 2.0;
+        } else {
+            return array[medio];
+        }
     }
 
     // Calcular la desviación estándar de un array
     public static double desviacionEstandarArray(int[] array) {
+        
     }
 
     // Generar un array de números aleatorios
