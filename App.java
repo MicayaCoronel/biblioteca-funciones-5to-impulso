@@ -108,12 +108,20 @@ public class App {
 
     // Contar palabras en una cadena
     public static int contarPalabras(String cadena) {
-        return 5;
+        if (cadena == null || cadena.isEmpty()) {
+            return 0;
+        }
+        String[] palabras = cadena.split("\\s+");
+        return palabras.length;
     }
 
     // Sumar elementos de un array
     public static int sumarArray(int[] array) {
-        return 7;
+        int suma = 0;
+        for (int num : array) {
+            suma += num;
+        }
+        return suma;
     }
 
     // Encontrar el máximo en un array
