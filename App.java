@@ -20,12 +20,16 @@ public class App {
 
     // Multiplicación de dos números
     public static int multiplicacion(int a, int b) {
+        return a*b;
         return 0;
     }
 
     // División de dos números
     public static double division(int a, int b) {
-        return (double) 2 / 2;
+         if (b == 0) {
+            throw new IllegalArgumentException("Divisor no puede ser cero");
+        }
+        return (double) a/b;
     }
 
     // Máximo de dos números
