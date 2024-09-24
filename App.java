@@ -52,12 +52,12 @@ public class App {
 
     // Número par
     public static boolean esPar(int n) {
-        return true;
+       return n % 2 == 0;
     }
 
     // Número impar
     public static boolean esImpar(int n) {
-        return false;
+        return n % 2 != 0;
     }
 
     // Potencia de un número
