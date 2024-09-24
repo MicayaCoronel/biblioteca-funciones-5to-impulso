@@ -148,17 +148,29 @@ public class App {
 
     // Ordenar un array
     public static void ordenarArray(int[] array) {
+           Arrays.sort(array);
     }
 
     // Buscar un elemento en un array
     public static boolean buscarElemento(int[] array, int elemento) {
-    
+     for (int num : array) {
+            if (num == elemento) {
+                return true;
+            }
+        }
         return false;
     }
 
     // Invertir un array
     public static void invertirArray(int[] array) {
-      
+      int i = 0, j = array.length - 1;
+        while (i < j) {
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+            i++;
+            j--;
+        }
     }
 
     // Calcular la media de un array
